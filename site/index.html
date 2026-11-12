@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TECHNOVA — техника с характером</title>
+  <meta name="description" content="Кураторский магазин техники TECHNOVA. Смартфоны, ноутбуки, аудио, часы и умный дом — только устройства, которые мы выбрали и протестировали сами.">
+  <meta property="og:title" content="TECHNOVA — техника с характером">
+  <meta property="og:description" content="Кураторский магазин техники: 16 моделей, честные обзоры, доставка по России за 1–3 дня.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#f4f1e8">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23111110'/%3E%3Cpath d='M32 12v40M14.7 22l34.6 20M49.3 22 14.7 42' stroke='%23ff5a2b' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preload" href="fonts/unbounded-cyr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/manrope-cyr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Store",
+    "name": "TECHNOVA",
+    "description": "Кураторский магазин современной техники",
+    "telephone": "+7 495 123-45-67",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Москва",
+      "streetAddress": "Большая Полянка, 12"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#catalog">Перейти к каталогу</a>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <p>Кураторский магазин техники · Москва</p>
+      <p>Бесплатная доставка от 15 000 ₽</p>
+    </div>
+  </div>
+
+  <header class="site-header" id="header">
+    <div class="container header__inner">
+      <a class="brand" href="#top" aria-label="TECHNOVA — на главную">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2v20M3.3 7l17.4 10M20.7 7 3.3 17"/></svg>
+        </span>
+        <span class="brand__name">TECH<span>NOVA</span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Основная навигация">
+        <a href="#catalog">Каталог</a>
+        <a href="#categories">Категории</a>
+        <a href="#editorial">Выбор редакции</a>
+        <a href="#about">О нас</a>
+      </nav>
+
+      <div class="header__actions">
+        <button class="icon-btn header__search" type="button" data-action="focus-search" aria-label="Поиск по каталогу">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+        </button>
+        <button class="icon-btn header__favorites" type="button" data-action="show-favorites" aria-label="Показать избранное">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3 4.4 13a5 5 0 0 1 7.1-7.1l.5.5.5-.5A5 5 0 0 1 19.6 13Z"/></svg>
+          <span class="badge-count" id="favorites-count">0</span>
+        </button>
+        <button class="cart-trigger" type="button" data-action="open-cart" aria-label="Открыть корзину">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+          <span class="cart-trigger__label">Корзина</span>
+          <span class="cart-count" id="cart-count">0</span>
+        </button>
+        <button class="menu-toggle" type="button" aria-controls="mobile-menu" aria-expanded="false" aria-label="Открыть меню">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <nav class="mobile-menu__nav" aria-label="Мобильная навигация">
+      <a href="#catalog"><span>01</span>Каталог</a>
+      <a href="#categories"><span>02</span>Категории</a>
+      <a href="#editorial"><span>03</span>Выбор редакции</a>
+      <a href="#about"><span>04</span>О нас</a>
+      <a href="#newsletter"><span>05</span>Письма</a>
+    </nav>
+    <div class="mobile-menu__foot">
+      <p>Москва, Большая Полянка, 12</p>
+      <a href="tel:+74951234567">+7 495 123-45-67</a>
+      <a href="mailto:hello@technova.ru">hello@technova.ru</a>
+    </div>
+  </div>
+
+  <main>
+    <section class="hero" id="top">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span></span>Кураторский магазин техники</p>
+          <h1 class="hero__title">
+            <span>Техника</span>
+            <span class="hero__title-accent">с характером<i>.</i></span>
+          </h1>
+          <p class="hero__lead">Отбираем гаджеты, которые действительно меняют день. Без сотни лишних моделей — только то, что стоит вашего внимания.</p>
+          <div class="hero__actions">
+            <a class="btn btn--dark" href="#catalog">
+              Смотреть витрину
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#categories">Выбрать категорию</a>
+          </div>
+          <dl class="hero__facts">
+            <div><dt>16</dt><dd>моделей в подборке</dd></div>
+            <div><dt>4.8</dt><dd>средний рейтинг</dd></div>
+            <div><dt>2 года</dt><dd>гарантии на всё</dd></div>
+          </dl>
+        </div>
+
+        <div class="hero__visual">
+          <article class="hero-card">
+            <div class="hero-card__media">
+              <img src="images/products/airpods-max/1.jpg" alt="Беспроводные наушники Apple AirPods Max" width="1280" height="960">
+              <span class="hero-card__label">Выбор редакции</span>
+              <span class="hero-card__rating">★ 4.9</span>
+            </div>
+            <div class="hero-card__body">
+              <div>
+                <p class="hero-card__kicker">Apple · Аудио</p>
+                <h2>AirPods Max</h2>
+                <p>Тишина, которую слышно.</p>
+              </div>
+              <div class="hero-card__price">
+                <strong>62 990 ₽</strong>
+                <s>69 990 ₽</s>
+                <button type="button" data-action="open-product" data-id="airpods-max" aria-label="Открыть AirPods Max">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+                </button>
+              </div>
+            </div>
+          </article>
+          <div class="hero__sticker" aria-hidden="true">
+            <span>new drop</span>
+            <strong>2026</strong>
+            <svg viewBox="0 0 24 24"><path d="M12 2v20M3.3 7l17.4 10M20.7 7 3.3 17"/></svg>
+          </div>
+          <div class="hero__note" aria-hidden="true">
+            <span>Доставим</span>
+            <strong>завтра</strong>
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Смартфоны</span><i>✳</i><span>Ноутбуки</span><i>✳</i><span>Аудио</span><i>✳</i><span>Клавиатуры</span><i>✳</i><span>Часы</span><i>✳</i><span>Умный дом</span><i>✳</i><span>Новинки 2026</span><i>✳</i>
+        </div>
+        <div class="marquee__group">
+          <span>Смартфоны</span><i>✳</i><span>Ноутбуки</span><i>✳</i><span>Аудио</span><i>✳</i><span>Клавиатуры</span><i>✳</i><span>Часы</span><i>✳</i><span>Умный дом</span><i>✳</i><span>Новинки 2026</span><i>✳</i>
+        </div>
+      </div>
+    </div>
+
+    <section class="section categories" id="categories">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span></span>01 / Категории</p>
+            <h2>Найдите своё</h2>
+          </div>
+          <p class="section-head__note">Шесть направлений, в которых мы разбираемся лучше всего. Нажмите на категорию — покажем только её.</p>
+        </header>
+
+        <div class="category-grid">
+          <button class="category-card category-card--lime reveal" type="button" data-action="filter-category" data-category="Смартфоны">
+            <span class="category-card__index">01</span>
+            <span class="category-card__count" data-category-count="Смартфоны"></span>
+            <span class="category-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><rect x="19" y="7" width="26" height="50" rx="6"/><path d="M28 12h8M29 52h6"/></svg>
+            </span>
+            <span class="category-card__title">Смартфоны</span>
+            <span class="category-card__desc">Флагманы и разумный выбор</span>
+            <span class="category-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </span>
+          </button>
+
+          <button class="category-card category-card--sky reveal" type="button" data-action="filter-category" data-category="Ноутбуки">
+            <span class="category-card__index">02</span>
+            <span class="category-card__count" data-category-count="Ноутбуки"></span>
+            <span class="category-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><rect x="12" y="12" width="40" height="28" rx="3"/><path d="M8 46h48l-5 7H13l-5-7ZM27 46h10"/></svg>
+            </span>
+            <span class="category-card__title">Ноутбуки</span>
+            <span class="category-card__desc">Для работы, учёбы и творчества</span>
+            <span class="category-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </span>
+          </button>
+
+          <button class="category-card category-card--orange reveal" type="button" data-action="filter-category" data-category="Аудио">
+            <span class="category-card__index">03</span>
+            <span class="category-card__count" data-category-count="Аудио"></span>
+            <span class="category-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M16 38V30a16 16 0 0 1 32 0v8"/><rect x="10" y="34" width="12" height="20" rx="5"/><rect x="42" y="34" width="12" height="20" rx="5"/></svg>
+            </span>
+            <span class="category-card__title">Аудио</span>
+            <span class="category-card__desc">Наушники и колонки с характером</span>
+            <span class="category-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </span>
+          </button>
+
+          <button class="category-card category-card--yellow reveal" type="button" data-action="filter-category" data-category="Клавиатуры">
+            <span class="category-card__index">04</span>
+            <span class="category-card__count" data-category-count="Клавиатуры"></span>
+            <span class="category-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><rect x="7" y="19" width="50" height="27" rx="4"/><path d="M13 26h4M22 26h4M31 26h4M40 26h4M49 26h2M13 33h4M22 33h4M31 33h4M40 33h4M49 33h2M20 40h24"/></svg>
+            </span>
+            <span class="category-card__title">Клавиатуры</span>
+            <span class="category-card__desc">Механика для работы и игры</span>
+            <span class="category-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </span>
+          </button>
+
+          <button class="category-card category-card--lavender reveal" type="button" data-action="filter-category" data-category="Часы">
+            <span class="category-card__index">05</span>
+            <span class="category-card__count" data-category-count="Часы"></span>
+            <span class="category-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><rect x="21" y="18" width="22" height="28" rx="7"/><path d="M26 18v-7h12v7M26 46v7h12v-7M32 27v7l5 3"/></svg>
+            </span>
+            <span class="category-card__title">Часы</span>
+            <span class="category-card__desc">Здоровье и связь на запястье</span>
+            <span class="category-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </span>
+          </button>
+
+          <button class="category-card category-card--peach reveal" type="button" data-action="filter-category" data-category="Умный дом">
+            <span class="category-card__index">06</span>
+            <span class="category-card__count" data-category-count="Умный дом"></span>
+            <span class="category-card__icon" aria-hidden="true">
+              <svg viewBox="0 0 64 64"><path d="M10 30 32 12l22 18"/><path d="M16 28v22h32V28M27 50V38h10v12"/></svg>
+            </span>
+            <span class="category-card__title">Умный дом</span>
+            <span class="category-card__desc">Свет, звук и автоматизация</span>
+            <span class="category-card__arrow" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M7 17 17 7M8 7h9v9"/></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalog">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span></span>02 / Витрина</p>
+            <h2>Выбор сезона</h2>
+          </div>
+          <p class="section-head__note">Каждую модель мы тестируем сами: неделю живём с устройством, прежде чем поставить его на витрину.</p>
+        </header>
+
+        <div class="catalog__controls">
+          <label class="search-field" for="search-input">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m16.5 16.5 4 4"/></svg>
+            <input id="search-input" type="search" placeholder="Поиск по витрине" autocomplete="off">
+            <button class="search-clear" type="button" data-action="clear-search" aria-label="Очистить поиск" hidden>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+            </button>
+          </label>
+          <label class="sort-field" for="sort-select">
+            <span>Сортировка</span>
+            <select id="sort-select">
+              <option value="popular">По популярности</option>
+              <option value="price-asc">Сначала дешевле</option>
+              <option value="price-desc">Сначала дороже</option>
+              <option value="rating">По рейтингу</option>
+            </select>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 10 5 5 5-5"/></svg>
+          </label>
+        </div>
+
+        <div class="filter-row">
+          <div class="filter-chips" id="filter-chips" role="group" aria-label="Фильтр по категориям"></div>
+          <p class="results-count" id="results-count" aria-live="polite"></p>
+        </div>
+
+        <div class="product-grid" id="product-grid"></div>
+
+        <div class="catalog__empty" id="catalog-empty" hidden></div>
+
+        <div class="catalog__more">
+          <button class="btn btn--outline" type="button" data-action="show-more" id="show-more" hidden>Показать все</button>
+        </div>
+
+        <noscript>
+          <p class="noscript">Для работы каталога, корзины и избранного включите JavaScript.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="editorial" id="editorial">
+      <div class="container editorial__grid">
+        <div class="editorial__copy reveal">
+          <p class="eyebrow eyebrow--light"><span></span>03 / Выбор редакции</p>
+          <h2>Тишина —<br>новая <em>роскошь.</em></h2>
+          <p class="editorial__lead">AirPods Max — редкий случай, когда техника выглядит как мебель, а работает как студия. Мы носили их неделю: в метро, в офисе и в самолёте.</p>
+          <blockquote>
+            «Лучшие наушники, которые мы тестировали в этом году. Не потому что громкие, а потому что вовремя замолкают».
+          </blockquote>
+          <div class="editorial__bottom">
+            <div class="editorial__score">
+              <strong>9.4</strong>
+              <span>из 10<br>оценка редакции</span>
+            </div>
+            <button class="btn btn--light" type="button" data-action="open-product" data-id="airpods-max">
+              Смотреть AirPods Max
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+        <figure class="editorial__media reveal">
+          <img src="images/products/airpods-max/2.jpg" alt="Серебристые наушники AirPods Max на чёрном фоне" width="1280" height="960" loading="lazy">
+          <figcaption><span>AirPods Max / Midnight</span><span>Тест редакции · 7 дней</span></figcaption>
+        </figure>
+      </div>
+      <span class="editorial__watermark" aria-hidden="true">✳</span>
+    </section>
+
+    <section class="section principles" id="about">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span></span>04 / Подход</p>
+            <h2>Почему у нас покупают</h2>
+          </div>
+          <p class="section-head__note">Мы не продаём всё подряд. Наша задача — чтобы вы купили одну правильную вещь, а не три компромисса.</p>
+        </header>
+
+        <div class="principles__grid">
+          <article class="principle reveal">
+            <span class="principle__index">01</span>
+            <h3>Сначала тест</h3>
+            <p>Каждый гаджет живёт у нас неделю до публикации. Проверяем не только характеристики, но и то, как устройство ощущается в быту.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="principle__index">02</span>
+            <h3>Честные цены</h3>
+            <p>Без накруток, серых схем и «акций», которые действуют всегда. Если скидка — значит, она настоящая.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="principle__index">03</span>
+            <h3>Доставка 1–3 дня</h3>
+            <p>Собираем заказ в день покупки. По Москве — курьером завтра, по России — СДЭК или почтой. От 15 000 ₽ — бесплатно.</p>
+          </article>
+          <article class="principle reveal">
+            <span class="principle__index">04</span>
+            <h3>Живая поддержка</h3>
+            <p>Отвечает человек, который разбирается в технике. Поможем выбрать, настроить и разобраться с гарантией.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <header class="section-head reveal">
+          <div>
+            <p class="eyebrow"><span></span>05 / Отзывы</p>
+            <h2>Что говорят люди</h2>
+          </div>
+          <p class="section-head__note">Средняя оценка 4.9 из 5 по 384 заказам. Мы не удаляем отзывы и не просим ставить звёзды.</p>
+        </header>
+
+        <div class="review-grid">
+          <figure class="review-card review-card--dark reveal">
+            <div class="review-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+            <blockquote>«Заказал AirPods Max в пятницу вечером — привезли в субботу утром. Упаковано идеально, помогли подключить и настроить шумоподавление».</blockquote>
+            <figcaption>
+              <span class="review-card__avatar">А</span>
+              <span><strong>Артём</strong><small>Москва · AirPods Max</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card reveal">
+            <div class="review-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+            <blockquote>«Помогли выбрать ноутбук под монтаж и не пытались продать самый дорогой. Это дорогого стоит. Теперь советую всем знакомым».</blockquote>
+            <figcaption>
+              <span class="review-card__avatar">М</span>
+              <span><strong>Марина</strong><small>Санкт-Петербург · Atlas Book 15</small></span>
+            </figcaption>
+          </figure>
+
+          <figure class="review-card reveal">
+            <div class="review-card__stars" aria-label="Оценка 5 из 5">★★★★★</div>
+            <blockquote>«Третья покупка за полгода. Всё честно: цена, сроки, гарантия. Возвращаться хочется — а это лучший показатель».</blockquote>
+            <figcaption>
+              <span class="review-card__avatar">Д</span>
+              <span><strong>Денис</strong><small>Казань · Lunacy K5 Pro</small></span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter" id="newsletter">
+      <div class="container newsletter__inner">
+        <div class="newsletter__copy reveal">
+          <p class="eyebrow"><span></span>06 / Письма</p>
+          <h2>Раз в неделю —<br>только важное<br><em>о технике.</em></h2>
+          <p>Новинки, честные обзоры и подборки без рекламного шума. Одно письмо в четверг.</p>
+        </div>
+        <div class="newsletter__form-wrap reveal">
+          <form class="newsletter__form" id="newsletter-form" novalidate>
+            <label class="sr-only" for="newsletter-email">Электронная почта</label>
+            <div class="newsletter__field">
+              <input id="newsletter-email" name="email" type="email" placeholder="Ваш email" autocomplete="email" required>
+              <button class="btn btn--dark" type="submit">
+                Подписаться
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              </button>
+            </div>
+            <p class="newsletter__note">Без спама. Отписка — в один клик.</p>
+            <p class="newsletter__error" id="newsletter-error" role="alert" hidden>Проверьте адрес — кажется, в нём опечатка.</p>
+          </form>
+          <div class="newsletter__success" id="newsletter-success" hidden>
+            <span aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>
+            </span>
+            <div>
+              <strong>Готово, вы в списке.</strong>
+              <p>Первое письмо придёт в четверг. Проверьте папку «Промоакции» — мы иногда туда попадаем.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="newsletter__star" aria-hidden="true">✳</span>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a class="brand brand--light" href="#top" aria-label="TECHNOVA — на главную">
+            <span class="brand__mark" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 2v20M3.3 7l17.4 10M20.7 7 3.3 17"/></svg>
+            </span>
+            <span class="brand__name">TECH<span>NOVA</span></span>
+          </a>
+          <p>Кураторский магазин техники с человеческим подходом. Выбираем меньше, но лучше.</p>
+          <address>
+            Москва, Большая Полянка, 12<br>
+            <a href="tel:+74951234567">+7 495 123-45-67</a><br>
+            <a href="mailto:hello@technova.ru">hello@technova.ru</a>
+          </address>
+        </div>
+
+        <nav class="footer__col" aria-label="Каталог">
+          <h3>Каталог</h3>
+          <button type="button" data-action="filter-category" data-category="Смартфоны">Смартфоны</button>
+          <button type="button" data-action="filter-category" data-category="Ноутбуки">Ноутбуки</button>
+          <button type="button" data-action="filter-category" data-category="Аудио">Аудио</button>
+          <button type="button" data-action="filter-category" data-category="Клавиатуры">Клавиатуры</button>
+          <button type="button" data-action="filter-category" data-category="Часы">Часы</button>
+          <button type="button" data-action="filter-category" data-category="Умный дом">Умный дом</button>
+        </nav>
+
+        <nav class="footer__col" aria-label="Покупателям">
+          <h3>Покупателям</h3>
+          <a href="#about">О магазине</a>
+          <a href="#reviews">Отзывы</a>
+          <a href="#newsletter">Рассылка</a>
+          <button type="button" data-action="show-favorites">Избранное</button>
+          <button type="button" data-action="open-cart">Корзина</button>
+          <button type="button" data-action="open-credits">Лицензии</button>
+        </nav>
+
+        <div class="footer__col">
+          <h3>На связи</h3>
+          <p class="footer__schedule">Ежедневно<br>10:00 — 21:00</p>
+          <div class="footer__social">
+            <a href="https://t.me/" target="_blank" rel="noreferrer">Telegram</a>
+            <a href="https://vk.com/" target="_blank" rel="noreferrer">VK</a>
+            <a href="https://youtube.com/" target="_blank" rel="noreferrer">YouTube</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>© 2026 TECHNOVA. Демонстрационный проект.</p>
+        <p>Фото: <button type="button" data-action="open-credits">Wikimedia Commons, лицензии</button></p>
+        <div class="footer__payments" aria-label="Способы оплаты"><span>МИР</span><span>VISA</span><span>MC</span></div>
+      </div>
+    </div>
+  </footer>
+
+  <div class="scrim" id="cart-scrim" data-action="close-cart" aria-hidden="true"></div>
+
+  <aside class="cart-drawer" id="cart-drawer" aria-hidden="true" aria-labelledby="cart-title">
+    <header class="cart-drawer__head">
+      <div>
+        <p class="eyebrow"><span></span>Ваш заказ</p>
+        <h2 id="cart-title">Корзина <span id="cart-title-count">0</span></h2>
+      </div>
+      <button class="icon-btn" type="button" data-action="close-cart" aria-label="Закрыть корзину">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+    </header>
+
+    <div class="cart-drawer__shipping" id="cart-shipping">
+      <p id="cart-shipping-text">До бесплатной доставки — 15 000 ₽</p>
+      <div class="progress"><span id="cart-progress"></span></div>
+    </div>
+
+    <div class="cart-drawer__items" id="cart-items"></div>
+
+    <div class="cart-drawer__empty" id="cart-empty">
+      <span class="cart-drawer__empty-icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+      </span>
+      <h3>Пока пусто</h3>
+      <p>Самое время присмотреть что-то стоящее. Подборка уже ждёт.</p>
+      <button class="btn btn--dark" type="button" data-action="go-catalog">В каталог</button>
+    </div>
+
+    <footer class="cart-drawer__foot" id="cart-foot">
+      <dl class="cart-totals">
+        <div><dt>Товары</dt><dd id="cart-subtotal">0 ₽</dd></div>
+        <div><dt>Доставка</dt><dd id="cart-delivery">—</dd></div>
+        <div class="cart-totals__grand"><dt>Итого</dt><dd id="cart-total">0 ₽</dd></div>
+      </dl>
+      <button class="btn btn--orange btn--full" type="button" data-action="checkout" id="checkout-btn">
+        Оформить заказ
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </button>
+      <p class="cart-drawer__note">Оплата онлайн или при получении — на выбор.</p>
+    </footer>
+  </aside>
+
+  <div class="modal" id="product-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-action="close-product"></div>
+    <div class="modal__panel product-modal" role="dialog" aria-modal="true" aria-labelledby="pm-title">
+      <button class="modal__close" type="button" data-action="close-product" aria-label="Закрыть карточку товара">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <div class="product-modal__grid">
+        <div class="product-modal__media-wrap">
+          <div class="product-modal__media" id="pm-media"></div>
+          <div class="product-modal__thumbs" id="pm-thumbs" role="tablist" aria-label="Фотографии товара"></div>
+        </div>
+        <div class="product-modal__body">
+          <p class="eyebrow" id="pm-category"></p>
+          <h2 id="pm-title"></h2>
+          <div class="product-modal__meta">
+            <span class="rating">★ <span id="pm-rating">4.9</span></span>
+            <span id="pm-reviews"></span>
+          </div>
+          <p class="product-modal__description" id="pm-description"></p>
+          <div class="tag-list" id="pm-highlights"></div>
+          <dl class="spec-list" id="pm-specs"></dl>
+          <div class="product-modal__purchase">
+            <div class="price-block">
+              <strong id="pm-price"></strong>
+              <s id="pm-old-price"></s>
+            </div>
+            <div class="qty" role="group" aria-label="Количество товара">
+              <button type="button" data-action="modal-qty-minus" aria-label="Уменьшить количество">−</button>
+              <span id="pm-qty">1</span>
+              <button type="button" data-action="modal-qty-plus" aria-label="Увеличить количество">+</button>
+            </div>
+            <button class="btn btn--orange product-modal__add" type="button" data-action="modal-add" id="pm-add">
+              В корзину
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 12H6.2L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg>
+            </button>
+          </div>
+          <p class="product-modal__note">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7z"/><circle cx="7" cy="18" r="1.6"/><circle cx="17.5" cy="18" r="1.6"/></svg>
+            Доставим за 1–3 дня · Гарантия 2 года · Возврат 14 дней
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="checkout-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-action="close-checkout"></div>
+    <div class="modal__panel checkout" role="dialog" aria-modal="true" aria-labelledby="checkout-title">
+      <button class="modal__close" type="button" data-action="close-checkout" aria-label="Закрыть оформление заказа">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+
+      <div class="checkout__view" id="checkout-form-view">
+        <header class="checkout__head">
+          <p class="eyebrow"><span></span>Оформление</p>
+          <h2 id="checkout-title">Заказ в пару шагов</h2>
+          <p>Заполните контакты и адрес — позвоним, чтобы подтвердить детали.</p>
+        </header>
+
+        <form class="checkout__form" id="checkout-form" novalidate>
+          <div class="checkout__grid">
+            <div class="checkout__fields">
+              <fieldset>
+                <legend>01 / Контакты</legend>
+                <div class="field-grid">
+                  <label class="field">
+                    <span>Имя и фамилия</span>
+                    <input type="text" name="name" placeholder="Анна Иванова" autocomplete="name" required>
+                    <em class="field__error"></em>
+                  </label>
+                  <label class="field">
+                    <span>Телефон</span>
+                    <input type="tel" name="phone" placeholder="+7 900 000-00-00" autocomplete="tel" required>
+                    <em class="field__error"></em>
+                  </label>
+                  <label class="field field--full">
+                    <span>Email</span>
+                    <input type="email" name="email" placeholder="anna@example.com" autocomplete="email" required>
+                    <em class="field__error"></em>
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>02 / Доставка</legend>
+                <div class="field-grid">
+                  <label class="field">
+                    <span>Город</span>
+                    <input type="text" name="city" placeholder="Москва" autocomplete="address-level2" required>
+                    <em class="field__error"></em>
+                  </label>
+                  <label class="field field--full">
+                    <span>Адрес</span>
+                    <input type="text" name="address" placeholder="ул. Большая Полянка, 12, кв. 4" autocomplete="street-address" required>
+                    <em class="field__error"></em>
+                  </label>
+                  <label class="field field--full">
+                    <span>Комментарий курьеру <i>необязательно</i></span>
+                    <input type="text" name="comment" placeholder="Домофон, удобное время доставки">
+                  </label>
+                </div>
+              </fieldset>
+
+              <fieldset>
+                <legend>03 / Оплата</legend>
+                <div class="radio-cards">
+                  <label class="radio-card">
+                    <input type="radio" name="payment" value="card" checked>
+                    <span class="radio-card__mark" aria-hidden="true"></span>
+                    <span><strong>Картой онлайн</strong><small>Безопасная оплата</small></span>
+                  </label>
+                  <label class="radio-card">
+                    <input type="radio" name="payment" value="cash">
+                    <span class="radio-card__mark" aria-hidden="true"></span>
+                    <span><strong>При получении</strong><small>Курьеру или в пункте выдачи</small></span>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+
+            <aside class="checkout__summary">
+              <h3>Ваш заказ</h3>
+              <div class="checkout__items" id="checkout-items"></div>
+              <dl class="checkout__totals">
+                <div><dt>Товары</dt><dd id="checkout-subtotal">0 ₽</dd></div>
+                <div><dt>Доставка</dt><dd id="checkout-delivery">—</dd></div>
+                <div class="checkout__grand"><dt>Итого</dt><dd id="checkout-total">0 ₽</dd></div>
+              </dl>
+              <p class="checkout__note">Это демонстрационный заказ: оплата не будет списана, данные никуда не отправляются.</p>
+            </aside>
+          </div>
+
+          <button class="btn btn--orange btn--full checkout__submit" type="submit">
+            Подтвердить заказ
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </button>
+          <p class="checkout__fineprint">Нажимая кнопку, вы соглашаетесь с условиями обработки персональных данных.</p>
+        </form>
+      </div>
+
+      <div class="checkout__success" id="checkout-success" hidden>
+        <span class="checkout__check" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="m5 12 5 5 9-10"/></svg>
+        </span>
+        <p class="eyebrow"><span></span>Готово</p>
+        <h2>Заказ <span id="order-number">TN-000000</span> принят</h2>
+        <p class="checkout__success-text">Спасибо! Позвоним в течение 15 минут и подтвердим детали. Подтверждение отправили на <strong id="order-email"></strong>.</p>
+        <dl class="checkout__success-meta">
+          <div><dt>Сумма заказа</dt><dd id="success-total">0 ₽</dd></div>
+          <div><dt>Доставка</dt><dd>1–3 дня</dd></div>
+          <div><dt>Оплата</dt><dd id="success-payment">Картой онлайн</dd></div>
+        </dl>
+        <button class="btn btn--dark" type="button" data-action="close-checkout-success">Вернуться к покупкам</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" id="credits-modal" aria-hidden="true">
+    <div class="modal__backdrop" data-action="close-credits"></div>
+    <div class="modal__panel credits" role="dialog" aria-modal="true" aria-labelledby="credits-title">
+      <button class="modal__close" type="button" data-action="close-credits" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>
+      </button>
+      <p class="eyebrow"><span></span>Лицензии</p>
+      <h2 id="credits-title">Фотографии</h2>
+      <p>Все фотографии товаров подобраны из открытых источников интернета и показаны на чёрном фоне — по три на каждый товар. Точные ссылки на первоисточники — в файле <strong>SOURCES.md</strong>.</p>
+      <ul class="credits__list">
+        <li><strong>Apple</strong> (AirPods Max, AirPods Pro 3, iPhone, Apple Watch) — фотографии устройств из открытых источников.</li>
+        <li><strong>Nova, Atlas, Pulse, Lunacy, Orbita, Luce</strong> — бренды вымышленные, использованы фотографии реальных устройств того же типа.</li>
+        <li><strong>Источники</strong> — поиск Яндекс Картинки: DNS, BigGeek, Яндекс Маркет и другие открытые страницы.</li>
+      </ul>
+      <p class="credits__note">Названия, цены и характеристики товаров — демонстрационные. Магазин не принимает реальные платежи.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
